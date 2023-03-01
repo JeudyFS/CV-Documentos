@@ -1,0 +1,196 @@
+body * {
+    text-align: center;
+    margin: 0%;
+}
+
+/* header */
+header {
+    background-image: url(multimedia/background.jpg);
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo--h1 {
+    font-size: 2rem;
+    font-family: 'Bodoni Moda', serif;
+    color: #9ea3ad;
+    letter-spacing: 2px;
+}
+.header__logo--h1::before {
+    content: "Jeudy";
+    display: block;
+    color: #9ea3ad;
+}
+.header__logo--p {
+    text-align: center;
+    margin-top: -1rem;
+    color: #c7c7c7;
+}
+
+/* Menu lateral */
+.container-menu {
+    display: flex;
+    justify-content: end;
+}
+.container-menu nav {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+}
+.nav__btn-menu {
+    z-index: -1;
+    cursor: pointer;
+    position: absolute;
+}
+.nav__btn-menu img {
+    background: #c7c7c7;
+    width: 25px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 2px;
+}
+.nav__btn-X img {
+    border-radius: 2px;
+    width: 25px;
+    margin: 8px 10px 10px 70%;
+    background: #969494;
+}
+
+.nav__menu {
+    width: 130px;
+    height: 75vh;
+    margin-top: 3px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0%;
+    transition: all 500ms ease;
+}
+.nav__menu--ul,
+li {
+    text-align: right;
+    padding: 15px 0px 15px 0px;
+    display: block;
+    list-style: none;
+}
+.nav__menu--ul li a {
+    padding: 15px 30px 15px 0px;
+    text-decoration: none;
+    color: #c7c7c7;
+    cursor: pointer;
+}
+.nav__menu--ul li:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 300ms;
+    border-right: solid 4px #c7c7c7;
+}
+.nav__menu--ul li a:hover {
+}
+#check:checked~.nav__menu {
+    visibility: visible;
+    opacity: 1;
+}
+#check {
+    display: none;
+}
+/* HABILIDADES */
+.title {
+    height: 50px;
+    margin: -30px auto 10px auto;
+    width: 80%;
+    max-width: 220px;
+    background: white;
+    box-shadow: -3px -4px 3px 0px rgb(238, 233, 233), 3px -4px 3px 0px rgb(238, 233, 233);
+}
+
+
+/* SECCION DE DOCUMENTOS */
+
+.main__perfil--documents {
+  padding-top: 40px
+
+   
+}
+
+  
+.main__perfil {
+    box-shadow: 0px -2px 4px 1px rgb(241, 237, 237);
+    padding-top: 1px;
+    height: 65%;
+}
+.divContainer {
+    margin: 0px 30px 0px 30px;
+}
+.main__perfil--documents a img {
+    width:50%;
+    border: solid 1px rgb(97, 94, 94);
+    cursor: pointer;
+}
+
+.button {
+    width: 60%;
+    height: 40px;
+    padding: 0px 11 0px 11px;
+    margin-top: 30px;
+    background: #2f343f;
+    color: #fff;
+    border: none;
+    transition: all 500ms ease;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 2px 2px #405d66;
+    cursor: pointer;
+}
+.button:hover {
+    border: solid 1px rgba(0, 115, 150, 0.911);
+    color: rgba(64, 180, 212, 0.801);
+    transition: all 800ms ease;
+}
+@media screen and (min-width:375px) {
+    header {
+        height: 40vh;
+    }
+    .header__logo--h1::before {
+        font-size: 3.3rem;
+        letter-spacing: 3px;
+    }
+    .header__logo--h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+    .header__logo--p {
+        letter-spacing: 1px;
+        margin-top: -1.5rem;
+        font-size: 1.2rem;
+    }
+
+
+    /* Documents */
+    .divContainer img{
+        width: 100%;
+
+    }
+}
+@media screen and (min-width:600px) {
+
+    /* header */
+   
+    .header__logo--h1 {
+        font-size: 4rem;
+    }
+    /* personal */
+    .main__perfil{
+        height: 65vh ;
+    }
+    .main__perfil--documents {
+        padding: 1px;
+        padding-top:  0px ;
+        display: flex;
+        justify-content: space-evenly;
+    
+       
+    }
+    .divContainer {
+        flex-direction: column;
+    }
+}
